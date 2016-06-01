@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.kiersey.puzzlebuttons.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:onClick="buttonpress1" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="right"
+        android:clickable="false"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton1"
+            android:layout_gravity="top|start"
+            android:onClick="buttonPress1"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton2"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="buttonPress2"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton3"
+            android:layout_gravity="end|top"
+            android:onClick="buttonPress3"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton4"
+            android:layout_gravity="start|center_vertical"
+            android:onClick="buttonPress4"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton5"
+            android:layout_gravity="center"
+            android:onClick="buttonPress5"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton6"
+            android:layout_gravity="end|center_vertical"
+            android:onClick="buttonPress6"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton7"
+            android:layout_gravity="start|bottom"
+            android:onClick="buttonPress7"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton8"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="buttonPress8"
+            android:clickable="true"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/toggleButton9"
+            android:layout_gravity="end|bottom"
+            android:onClick="buttonPress9"
+            android:clickable="true"
+            android:checked="false" />
+
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="150dp"
+            android:text="You win! Play again?"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:background="#00ff2a"
+            android:textSize="45dp"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:onClick="playAgain"/>
+
+    </FrameLayout>
+
+</FrameLayout>
